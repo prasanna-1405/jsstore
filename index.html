@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online-Store</title>
+    <style>
+      * {
+        margin: 0px;
+      }
+
+      .container {
+        background-color: white;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(255, 231, 208);
+      }
+      .row {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(250, 255, 230);
+      }
+      .box {
+        background-color: rgb(212, 246, 235);
+        margin: 20px;
+        width: 300px;
+
+      }
+      li {
+        display:inline-block;
+        padding: 10px;
+        font-size: larger;
+      }
+      a{
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+img {
+  width: 300px;
+}
+.row .box .product {
+  padding:10px
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div><h1>Online Store</h1></div>
+        <div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <!-- <li><a href="https://forms.gle/p7zabRFzgHHMccnY8">GitHub A</a></li>
+            <li><a href="https://forms.gle/o9D6EFkbVHzdVKL18">GitHub B</a></li>
+   -->
+
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box">
+          <img src="https://i.pinimg.com/736x/38/a6/6f/38a66fedf4b552c8f4c2b69d1f47c448.jpg" />
+          <div class="product">
+          <h2>Product 1</h2>
+          <p>This is the description of the product.</p>
+          <h3>Rs 230</h3>
+          <button>Add to Cart</button>
+        </div>
+        </div>
+        <div class="box">
+          <img src="https://i.pinimg.com/736x/bc/c7/23/bcc723326772de30f20296b91eb8bd70.jpg" />
+          <div class="product">
+          <h2>Product 2</h2>
+          <p>This is the description of the product.</p>
+          <h3>Rs 200</h3>
+          <button>Add to Cart</button>
+          </div>
+        </div>
+        <div class="box">
+          <img src="https://i.pinimg.com/736x/95/de/7a/95de7aad349822137df587faab0b0841.jpg" />
+          <div class="product">
+          <h2>Product 3</h2>
+          <p>This is the description of the product.</p>
+          <h3>Rs 375</h3>
+          <button>Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
