@@ -3,93 +3,154 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online-Store</title>
+    <title>Online Store</title>
     <style>
       * {
-        margin: 0px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
       }
 
       .container {
-        background-color: white;
+        background-color: #f8f9fa;
+        min-height: 100vh;
+        padding-bottom: 20px;
       }
+
       .header {
         display: flex;
         justify-content: space-between;
-        background-color: rgb(255, 231, 208);
+        align-items: center;
+        padding: 20px;
+        background-color: #ff8c42;
+        color: white;
       }
+      
+      .header h1 {
+        margin-left: 20px;
+      }
+
+      .header ul {
+        list-style: none;
+      }
+
+      .header ul li {
+        display: inline-block;
+        margin: 0 15px;
+      }
+
+      .header ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        transition: 0.3s;
+      }
+
+      .header ul li a:hover {
+        text-decoration: underline;
+      }
+
       .row {
         display: flex;
         justify-content: center;
-        background-color: rgb(250, 255, 230);
+        flex-wrap: wrap;
+        margin-top: 20px;
       }
-      .box {
-        background-color: rgb(212, 246, 235);
-        margin: 20px;
-        width: 300px;
 
+      .box {
+        background-color: white;
+        margin: 20px;
+        width: 320px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s;
       }
-      li {
-        display:inline-block;
-        padding: 10px;
-        font-size: larger;
+
+      .box:hover {
+        transform: scale(1.05);
       }
-      a{
-        text-decoration: none;
+
+      .box img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
       }
-      a:hover {
-        text-decoration: underline;
+
+      .product {
+        padding: 15px;
+        text-align: center;
       }
-img {
-  width: 300px;
-}
-.row .box .product {
-  padding:10px
-}
+
+      .product h2 {
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      .product p {
+        color: #666;
+        margin-bottom: 10px;
+      }
+
+      .product h3 {
+        color: #ff8c42;
+        margin-bottom: 15px;
+      }
+
+      .product button {
+        padding: 10px 20px;
+        border: none;
+        background-color: #ff8c42;
+        color: white;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .product button:hover {
+        background-color: #e67632;
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="header">
-        <div><h1>Online Store</h1></div>
-        <div>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <!-- <li><a href="https://forms.gle/p7zabRFzgHHMccnY8">GitHub A</a></li>
-            <li><a href="https://forms.gle/o9D6EFkbVHzdVKL18">GitHub B</a></li>
-   -->
-
-          </ul>
-        </div>
+        <h1>Online Store</h1>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </div>
       <div class="row">
         <div class="box">
           <img src="https://i.pinimg.com/736x/38/a6/6f/38a66fedf4b552c8f4c2b69d1f47c448.jpg" />
           <div class="product">
-          <h2>Product 1</h2>
-          <p>This is the description of the product.</p>
-          <h3>Rs 230</h3>
-          <button>Add to Cart</button>
-        </div>
+            <h2>Product 1</h2>
+            <p>This is the description of the product.</p>
+            <h3>Rs 230</h3>
+            <button>Add to Cart</button>
+          </div>
         </div>
         <div class="box">
           <img src="https://i.pinimg.com/736x/bc/c7/23/bcc723326772de30f20296b91eb8bd70.jpg" />
           <div class="product">
-          <h2>Product 2</h2>
-          <p>This is the description of the product.</p>
-          <h3>Rs 200</h3>
-          <button>Add to Cart</button>
+            <h2>Product 2</h2>
+            <p>This is the description of the product.</p>
+            <h3>Rs 200</h3>
+            <button>Add to Cart</button>
           </div>
         </div>
         <div class="box">
           <img src="https://i.pinimg.com/736x/95/de/7a/95de7aad349822137df587faab0b0841.jpg" />
           <div class="product">
-          <h2>Product 3</h2>
-          <p>This is the description of the product.</p>
-          <h3>Rs 375</h3>
-          <button>Add to Cart</button>
+            <h2>Product 3</h2>
+            <p>This is the description of the product.</p>
+            <h3>Rs 375</h3>
+            <button>Add to Cart</button>
           </div>
         </div>
       </div>
